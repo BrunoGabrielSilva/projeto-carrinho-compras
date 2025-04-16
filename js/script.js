@@ -14,9 +14,6 @@ function adicionarItem(item) {
 }
 
 function removerItem(item) {
-
-    var quantidade = document.getElementById('quantidade'+ item);
-    var total = document.getElementById('total'+ item);
     if (qtd[item] > 0) {
         qtd[item] -= 1;
         valorTotal[item] = Number.parseFloat(valorProduto[item]) * qtd[item];
